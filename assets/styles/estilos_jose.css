@@ -1,0 +1,69 @@
+body{ background-color:black;
+}
+article{ color:rgb(255, 255, 255);padding: 1.5rem;
+    border-bottom: #FFFFFF 1px solid;
+}
+#titulo_del_blog{ text-align: center;
+    font-size: 3rem;
+    color:white;
+}   
+.resaltado{ color:rgb(41, 210, 240);
+}
+
+nav>ul>li { list-style: none;
+}
+nav>ul>li>a {
+    text-decoration: none;
+}
+#footer_blog{
+    padding: 2rem;
+}
+
+footer{
+    color:#FFFFFF;
+}
+.ilustracion{
+    border: white 4px solid;
+}
+
+.ilustracion figcaption {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+}
+
+/* grid */
+section {
+    
+    /* despliégate como  grid */
+    display: grid;
+    /* Crea 12 columnas cada una de una fracción usando la función repeat*/
+    grid-template-columns: repeat(12, 1fr);
+    /* deja que las filas(renglones) ocupen el alto que necesitan */
+    grid-auto-rows: auto;
+    /* añade un espacio entre los elementos del grid de 3rem */
+    gap: 3rem;
+}
+
+/* Termina grid */
+
+/* apunta sólo a los header que son hijos directos de section */
+section>header {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 12;
+}
+/* apunta sólo a los header que son hijos directos de section */
+section>main {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 8;
+}
+/* apunta sólo a los header que son hijos directos de section */
+section>aside {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 4;
+}
+/* apunta sólo a los header que son hijos directos de section */
+section>footer {
+    /* esta sección se extenderá 12 columnas. */
+    grid-column: span 12;
+}
